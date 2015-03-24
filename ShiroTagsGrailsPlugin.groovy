@@ -5,7 +5,11 @@ class ShiroTagsGrailsPlugin {
     def grailsVersion = "2.4 > *"
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-        "grails-app/views/error.gsp"
+        "grails-app/views/error.gsp",
+        "grails-app/conf/BuildConfig.groovy",
+        "grails-app/conf/DataSource.groovy",
+        "grails-app/conf/UrlMappings.groovy",
+        "grails-app/i18n/shiro.properties"
     ]
 
     // TODO Fill in these fields

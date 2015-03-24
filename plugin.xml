@@ -7,6 +7,6 @@
   <documentation>https://grails.org/plugin/shiro-tags</documentation>
   <type>ShiroTagsGrailsPlugin</type>
   <resources>
-    <resource>AccessTagLib</resource>
+    <resource>LinkTagLib</resource>
   </resources>
 </plugin>

@@ -1,6 +1,11 @@
-class AccessTagLib {
-	def shiroLink = { attrs, body ->
-		if (SecurityUtils.subject.isPermitted("${controller}:${action}")) {
+import org.apache.shiro.SecurityUtils
+
+class LinkTagLib {
+
+	static namespace = "shiro"
+
+	def link = { attrs, body ->
+		if (SecurityUtils.subject.isPermitted("${attrs.controller}:${attrs.action}")) {
 			out << g.link([action: attrs.action,
 				controller: attrs.controller,
 				resource: attrs.resource,
@@ -17,7 +22,7 @@ class AccessTagLib {
 				absolute: attrs.absolute,
 				base: attrs.base,
 				event: attrs.event
-				])
+				], body())
 		}
 	}
 }

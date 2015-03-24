@@ -40,8 +40,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":shiro:1.2.1"
-        // compile ":tomcat:7.0.55.3" 
+        build ":shiro:1.2.1"
         build(":release:3.0.1",
               ":rest-client-builder:1.0.3") {
             export = false
