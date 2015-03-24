@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>shiro-tags</artifactId>
+  <packaging>zip</packaging>
+  <version>0.1</version>
+  <name>Shiro Tags Plugin</name>
+  <description>Tags for presenting GSP links according to the user permissions.
+</description>
+  <url>https://grails.org/plugin/shiro-tags</url>
+  <developers>
+    <developer>
+      <name>Michael Schuenck</name>
+      <email>michaelss@gmail.com</email>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>shiro</artifactId>
+      <version>1.2.1</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
