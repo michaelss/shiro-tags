@@ -1,7 +1,7 @@
 class AccessTagLib {
 	def shiroLink = { attrs, body ->
 		if (SecurityUtils.subject.isPermitted("${controller}:${action}")) {
-			out << g.link(action: attrs.action,
+			out << g.link([action: attrs.action,
 				controller: attrs.controller,
 				resource: attrs.resource,
 				namespace: attrs.namespace,
@@ -17,7 +17,7 @@ class AccessTagLib {
 				absolute: attrs.absolute,
 				base: attrs.base,
 				event: attrs.event
-				)
+				])
 		}
 	}
 }
