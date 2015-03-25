@@ -6,4 +6,9 @@ When using Grails [Apache Shiro plugin](http://grails.org/plugin/shiro), it is p
 
 `<shiro:link controller="person" action="create">Create Person</shiro:link>`
 
-By now, the only supported attributes are `controller` and `action`.
+By now, the only supported attributes are `controller` and `action`. The other regular `<g:link>` attributes may be used as well and they will work normally, but the presentation of the link will depend exclusively on the permission to access the supplied controller/action.
+
+## Requirements
+
+Grails version 2.4 > *
+Shiro integration for Grails plugin
