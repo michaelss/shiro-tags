@@ -11,4 +11,5 @@ By now, the only supported attributes are `controller` and `action`. The other r
 ## Requirements
 
 Grails version 2.4 > *
+
 Shiro integration for Grails plugin
