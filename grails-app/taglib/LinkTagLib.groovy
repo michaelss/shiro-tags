@@ -5,7 +5,10 @@ class LinkTagLib {
 	static namespace = "shiro"
 
 	def link = { attrs, body ->
-		if (SecurityUtils.subject.isPermitted("${attrs.controller}:${attrs.action}")) {
+		String controller = attrs.controller ?: (attrs.url?.controller ?: controllerName)
+		String action = attrs.action ?: (attrs.url?.action ?: actionName)
+
+		if (SecurityUtils.subject.isPermitted("${controller}:${action}")) {
 			out << g.link([action: attrs.action,
 				controller: attrs.controller,
 				resource: attrs.resource,
