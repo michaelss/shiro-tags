@@ -6,7 +6,7 @@ When using Grails [Apache Shiro plugin](http://grails.org/plugin/shiro), it is p
 
 `<shiro:link controller="person" action="create">Create Person</shiro:link>`
 
-`<g:createLink controller="book" />`
+`<shiro:createLink controller="book" />`
 
 The same attributes of the original tags can be used. However, the access control is based on `controller` and `action` only.
 
