@@ -12,6 +12,6 @@ The same attributes of the original tags can be used. However, the access contro
 
 ## Requirements
 
-* Grails version 2.4 > *
+* Grails version 2.0 > *
 
 * [Shiro integration for Grails plugin](https://grails.org/plugin/shiro)
