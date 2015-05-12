@@ -12,12 +12,17 @@ class ShiroTagsGrailsPlugin {
         "grails-app/i18n/shiro.properties"
     ]
 
-    // TODO Fill in these fields
     def title = "Shiro Tags Plugin" // Headline display name of the plugin
     def author = "Michael Schuenck"
     def authorEmail = "michaelss@gmail.com"
     def description = '''\
-Tags for presenting GSP links according to the user permissions.
+Tags for presenting GSP links according to the user permissions, defined by\
+Shiro. Instead of using <g:link> and <g:createLink>, the developer should use\
+<shiro:link> and <shiro:createLink>. If the user has no permission to the\
+declared controller and/or action, the link is not presented. Thus, if the\
+controller nor the action is informed, the regular <g:xxx> tags can be used. In\
+order to use this plugin, Apache Shiro Integration for Grails\
+(https://grails.org/plugin/shiro) is required.
 '''
 
     // URL to the plugin's documentation
@@ -26,7 +31,7 @@ Tags for presenting GSP links according to the user permissions.
     // Extra (optional) plugin metadata
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
+   def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
 //    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
@@ -38,7 +43,7 @@ Tags for presenting GSP links according to the user permissions.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+   def scm = [ url: "https://grails.org/plugin/shiro-tags" ]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before
