@@ -1,4 +1,4 @@
-<plugin name='shiro-tags' version='0.1' grailsVersion='2.4 &gt; *'>
+<plugin name='shiro-tags' version='1.0' grailsVersion='1.2 &gt; *'>
   <author>Michael Schuenck</author>
   <authorEmail>michaelss@gmail.com</authorEmail>
   <title>Shiro Tags Plugin</title>
