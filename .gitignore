@@ -1,0 +1,8 @@
+.DS_Store
+.settings
+*.log
+/grails-shiro-tags-*.zip
+/grails-shiro-tags-*.zip.sha1
+/plugin.xml
+/target
+/web-app
