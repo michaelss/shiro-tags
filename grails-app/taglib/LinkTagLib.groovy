@@ -3,7 +3,7 @@ import org.apache.shiro.SecurityUtils
 class LinkTagLib extends ShiroBaseTagLib {
 
 	def link = { attrs, body ->
-        protectedTag(attrs, body, g.link([action: attrs.action,
+		protectedTag(attrs, body, g.link([action: attrs.action,
 			controller: attrs.controller,
 			resource: attrs.resource,
 			namespace: attrs.namespace,

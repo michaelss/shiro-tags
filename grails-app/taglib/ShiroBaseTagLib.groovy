@@ -4,7 +4,7 @@ abstract class ShiroBaseTagLib {
 
     static namespace = "shiro"
 
-    protected def protectedTag = { attrs, body, tagContent ->
+    protected void protectedTag(attrs, body, tagContent) {
         String controller = attrs.controller ?: (attrs.url?.controller ?: controllerName)
         String action = attrs.action ?: (attrs.url?.action ?: actionName)
 
